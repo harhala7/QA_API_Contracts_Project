@@ -1,3 +1,5 @@
+[![API Tests](https://github.com/harhala7/QA_API_Contracts_Project/actions/workflows/tests.yml/badge.svg)](https://github.com/harhala7/QA_API_Contracts_Project/actions/workflows/tests.yml)
+
 # API Contract Testing (Python)
 
 API-only QA project using **pytest**, **requests** and **jsonschema** to validate API responses against a contract (schema).
