@@ -30,3 +30,14 @@ pytest
 https://jsonplaceholder.typicode.com
 
 GET /users
+
+## Security hygiene checks
+
+This project includes basic API security hygiene tests commonly performed by QA Engineers:
+
+- HTTPS usage verification
+- Response `Content-Type` validation (`application/json`)
+- Detection of sensitive data exposure in API responses (e.g. passwords, tokens)
+- Validation that error responses do not leak implementation details (stack traces, exceptions)
+
+These checks help identify common security and data exposure risks early, without performing penetration testing.
