@@ -1,15 +1,25 @@
 [![API Tests](https://github.com/harhala7/QA_API_Contracts_Project/actions/workflows/tests.yml/badge.svg)](https://github.com/harhala7/QA_API_Contracts_Project/actions/workflows/tests.yml)
 
-# API Contract Testing (Python)
+## What this project demonstrates
+- API testing using pytest and requests
+- Contract testing to validate API schemas and responses
+- Positive and negative test scenarios
+- Basic security hygiene (headers, auth assumptions)
+- Clean, scalable test structure
 
-API-only QA project using **pytest**, **requests** and **jsonschema** to validate API responses against a contract (schema).
+## Tech stack
+- Python
+- Pytest
+- Requests
 
-## What is covered
-- Happy path API tests
-- Negative tests (error handling)
-- Contract tests using JSON Schema validation
+## How to run
+```bash
+pip install -r requirements.txt
+pytest 
+```
 
 ## Project structure
+```text
 tests/
   test_users_happy.py
   contracts/
@@ -17,19 +27,16 @@ tests/
   negative/
     test_users_negative.py
 schemas/
-   user_schema.json
+  user_schema.json
+```
 
-   
-## Run locally
-```bash
-pip install -r requirements.txt
-pytest
 
 ## Target API
+Public test API used for demonstration purposes:
 
-https://jsonplaceholder.typicode.com
-
+https://jsonplaceholder.typicode.com  
 GET /users
+
 
 ## Security hygiene checks
 
